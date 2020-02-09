@@ -3,9 +3,10 @@ import java.util.Scanner;
 
 public class PokemonGame{
     public static void main(String args[]){
-        Pokemon generated = new Pokemon("KoyKing");
+        Pokemon generated = new Pokemon("Koiking", "water");
         System.out.println("What will your pokemon do.... \noption: Eat, Attack, Sleep, Run");
         Scanner scan = new Scanner(System.in);
+        System.out.print("> ");
         String choose = scan.next();
         scan.close();
 
@@ -21,18 +22,18 @@ public class PokemonGame{
     }
 
     static void eat(String choose) {
-        System.out.println("KoyKing eat a berry.");
+        System.out.println("Koiking eat a berry.");
     }
 
     static void attack(String choose) {
-        System.out.println("KoyKing attack !");
+        System.out.println("Koiking attack !");
     }
 
     static void sleep(String choose) {
-        System.out.println("KoyKing is sleep.");
+        System.out.println("Koiking is sleep.");
     }
 
     static void run(String choose) {
-        System.out.println("KoyKing ran away.");
+        System.out.println("Koiking ran away.");
     }
 }

@@ -1,24 +1,33 @@
 import java.io.*;
-//Things pokemon do {eat(berry), attack, sleep, faint, run} // HP, level, PP
+import java.util.Arrays;
+
 public class Pokemon{
 
-        // String pokemonName = "KoyKing";
-        // int healthPoint = 100;
-        // int powerPoints = 3;
-        // int Level = 5;
-        // String inventory[2] = {"berry"};
+        // private String name;
+        // private String type;
+        // private String inventory[];
+        // private String weakness[];
+        // private String gender[];
+        // private int healthPoint;
+        // private int powerPoints;
+        // private int level;
 
-        public Pokemon(String name){
-                String pokemonName = name;
+        public Pokemon(String pokemonName, String pokemonType){
                 String inventory[] = {"berry"};
+                String weakness[] = {"Electric", "Grass"};
+                String gender = "male";
                 int healthPoint = 100;
                 int powerPoints = 3;
-                int Level = 5;
-
+                int level = 5;
+                System.out.println("-----------------------------");
                 System.out.println("Name: " + pokemonName);
+                System.out.println("Type: " + pokemonType);
+                System.out.println("Gender: " + gender);
                 System.out.println("HP: " + healthPoint);
                 System.out.println("PP: " + powerPoints);
-                System.out.println("Lv: " + Level);
-                System.out.println("Inv: " + inventory[0]);
+                System.out.println("Lv: " + level);
+                System.out.println("Weakness: " + Arrays.toString(weakness));
+                System.out.println("Inv: " + Arrays.toString(inventory));
+                System.out.println("-----------------------------");
         }
 }
